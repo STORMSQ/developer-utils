@@ -1,0 +1,38 @@
+{
+    "name": "stormsq/developer-utils",   
+    "description": "My Pattern of laravel project",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sten, Liao",
+            "email": "liao91826@outlook.com"
+        }
+    ],
+    "require": {
+        "laravel/framework": "^5.0|^6.0|^7.0",
+        "stormsq/developer-service":"dev-master",
+        "intervention/image": "^2.5"
+        
+    },
+    "autoload": {
+        "psr-4": {
+            "STORMSQ\\DeveloperUtils\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "STORMSQ\\DeveloperUtils\\DeveloperUtilsProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    }
+}
